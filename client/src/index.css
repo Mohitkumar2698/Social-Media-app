@@ -2,3 +2,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.page-link {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline 5px red;
+  }
+  &:active {
+    text-decoration: underline 5px red;
+  }
+  &:link {
+    text-decoration: underline 5px red;
+  }
+}

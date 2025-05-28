@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
 export const connectDB = async () => {
-  await mongoose.connect("mongodb://localhost:27017/instagram-db");
+  await mongoose.connect("mongodb://localhost:27017/newDB");
   console.log("Database is Connected!");
 };
