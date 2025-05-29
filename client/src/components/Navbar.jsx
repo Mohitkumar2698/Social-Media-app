@@ -1,9 +1,9 @@
 import React from "react";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="h-[10vh] bg-gray-500 flex justify-between items-center pl-[5rem] pr-[7rem]">
+    <div className="h-[10vh] bg-gray-700 flex justify-between items-center pl-[5rem] pr-[7rem]">
       <div className="page-links-div flex items-center gap-[1.2rem] font-bold text-[1.2rem]">
         <p className="page-link">GAME</p>
         <p className="page-link">NEWS</p>
@@ -13,8 +13,14 @@ const Navbar = () => {
         <p className="page-link">GAMING ZONE</p>
       </div>
       <div className="login-download-div flex items-center gap-[1.8rem] font-bold text-[1.2rem] text-white">
-        <button>LOGIN</button>
-        <button className="p-[1rem] pt-[0.3rem] pb-[0.3rem] bg-red-600 rounded font-normal text-[1rem]">DOWNLOAD NOW</button>
+        <Link to={"/login"} className="cursor-pointer">
+          <p>LOGIN</p>
+        </Link>
+        <Link className="cursor-pointer" to={"/"}>
+          <p className="p-[1rem] pt-[0.3rem] pb-[0.3rem] bg-red-600 rounded font-normal text-[1rem]">
+            DOWNLOAD NOW
+          </p>
+        </Link>
       </div>
     </div>
   );
